@@ -1,23 +1,23 @@
-@mixin background-and-drop-shadow() {
-  background: var(--vaperina-secondary);
-  box-shadow: 0 1px 2px rgba(var(--always-black-rgb), .2);
+// Visibility
+
+body.archetype-regular,
+body.archetype-private_message,
+#main-outlet .read_restricted { 
+  .topic-body {
+    .contents::after {
+      font-size: $font-down-3;
+    }
+  }
 }
 
-// Tudaster
+// Topic Owner
 
-.docs {
-  .topic-list {
-     tbody tr {
-       border-radius: 8px;
-       margin: 5px 0;
-     }
-  }
-  .topic-avatar {
-    margin: 1em;
-  }
-  .topic-body {
-    @include background-and-drop-shadow();
-    border-radius: 8px;
-    padding: 1em;
-  }
+.topic-post.topic-owner article:not(#post_1) .row .topic-body .topic-meta-data .names .first:after {
+  content: 'Szerző';
+  color: var(--secondary);
+  background: var(--secondary-medium);
+  margin-left: 4px;
+  padding: 0px 8px;
+  border-radius: 6px;
+  line-height: normal;
 }
