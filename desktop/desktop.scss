@@ -1,9 +1,24 @@
-// Tudaster
+// Visibility
 
-.docs {
-  .topic-list {
-    tbody tr {
-      border-bottom: 1px solid var(--primary-low);
+body.archetype-regular,
+body.archetype-private_message,
+#main-outlet .read_restricted { 
+  .topic-body {
+    .contents::after {
+      font-size: $font-down-2;
+      margin-left: 11px;
     }
   }
+}
+
+// Topic Owner
+
+.topic-post.topic-owner article:not(#post_1) .row .topic-body .topic-meta-data .names::after {
+    content: "Szerző";
+    color: var(--secondary);
+    font-weight: bold;
+    background: var(--secondary-medium);
+    padding: 0px 8px;
+    border-radius: 8px;
+    line-height: normal;
 }
