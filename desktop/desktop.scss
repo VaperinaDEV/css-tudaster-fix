@@ -14,11 +14,11 @@ body.archetype-private_message,
 // Topic Owner
 
 .topic-post.topic-owner article:not(#post_1) .row .topic-body .topic-meta-data .names::after {
-    content: "Szerző";
-    color: var(--secondary);
-    font-weight: bold;
-    background: var(--secondary-medium);
-    padding: 0px 8px;
-    border-radius: 8px;
-    line-height: normal;
+  content: "Szerző";
+  color: var(--secondary);
+  font-weight: bold;
+  background: var(--secondary-medium);
+  padding: 0px 8px;
+  border-radius: 8px;
+  line-height: normal;
 }
