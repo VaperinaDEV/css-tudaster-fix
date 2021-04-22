@@ -1,63 +1,27 @@
-// Tudaster
+// Lathatosag
 
-.docs {
-  width: calc(100vw - 20px);
-  .topic-list {
-    table-layout: unset !important;
-    th {
-      padding: 12px 7px;
-      max-width: inherit;
-      width: 100%;
-    }
-    td {
-      padding: 12px 7px 7px 15px;
-      width: 100%;
-    }
-    tbody tr {
-      background: var(--vaperina-secondary);
-    }
-    .main-link {
-      background: none !important;
-      box-shadow: none !important;
-      border-radius: unset !important;
-      .link-bottom-line {
-        padding: 0.6em 1em 0.6em 0 !important;
-        a {
-          padding: 2px 1px;
-        }
-      }
-    }
-    .topic-statuses {
-      display: none;
+body.archetype-regular,
+body.archetype-private_message,
+#main-outlet .read_restricted { 
+  .topic-body {
+    .contents::after {
+      font-family: var(--font-family);
+      color: var(--primary-very-high);
+      background: var(--primary-low);
+      padding: 3px 8px;
+      border-radius: 8px;
+      font-weight: 900;
+      line-height: normal;
     }
   }
 }
 
-.docs-browse {
-  .docs-topic .docs-nav-link.return {
-    font-size: $font-up-1;
-    justify-content: normal;
-  }
-  .docs-topic-list .discourse-tags {
-    display: flex;
-    max-width: 200px;
-  }
+body.archetype-regular .topic-body .contents::after {
+  content: "Nyilvános";
 }
-
-.mobile-view {
-  .docs-expander {
-    background: var(--vaperina-btn);
-  }
-  .docs-filters {
-    background: var(--vaperina-btn);
-    border-radius: 8px;
-    margin-top: 5px;
-  }
+body.archetype-private_message .topic-body .contents::after {
+  content: "Privát";
 }
-
-.docs-search {
-  border-radius: 8px;
-  .docs-search-bar {
-    border-radius: 8px;
-  }
+#main-outlet .read_restricted .topic-body .contents::after {
+  content: "Közösség";
 }
