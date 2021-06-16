@@ -3,11 +3,9 @@
 body.archetype-regular,
 body.archetype-private_message,
 #main-outlet .read_restricted { 
-  .topic-body {
-    .contents::after {
-      font-size: $font-down-2;
-      margin-left: 11px;
-    }
+  .topic-body::after {
+    font-size: $font-down-2;
+    margin-left: 11px;
   }
 }
 
