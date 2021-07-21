@@ -1,7 +1,6 @@
 // Visibility
 
 body.archetype-regular,
-body.archetype-private_message,
 #main-outlet .read_restricted { 
   .topic-body {
     .contents::after {
@@ -18,9 +17,6 @@ body.archetype-private_message,
 
 body.archetype-regular .topic-body .contents::after {
   content: "Nyilvános";
-}
-body.archetype-private_message .topic-body .contents::after {
-  content: "Privát";
 }
 #main-outlet .read_restricted .topic-body .contents::after {
   content: "Közösség";
