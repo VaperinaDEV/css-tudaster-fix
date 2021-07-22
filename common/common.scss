@@ -20,6 +20,8 @@ body.archetype-regular .topic-body .contents::after {
 }
 body.archetype-private_message .topic-body .contents::after {
   content: "";
+  padding: 3px 8px;
+  line-height: normal;
 }
 #main-outlet .read_restricted .topic-body .contents::after {
   content: "Közösség";
