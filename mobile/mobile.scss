@@ -15,7 +15,7 @@ body.archetype-private_message,
 .topic-post.topic-owner article:not(#post_1) .row .topic-body .topic-meta-data .names .first:after {
   content: 'Szerző';
   color: var(--secondary);
-  background: var(--secondary-medium);
+  background: var(--tertiary);
   margin-left: 4px;
   padding: 0px 8px;
   border-radius: 6px;
