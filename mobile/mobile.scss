@@ -15,10 +15,10 @@ body.archetype-private_message,
 .topic-post.topic-owner article:not(#post_1) .row .topic-body .topic-meta-data .names .first:after {
   content: 'Szerző';
   color: var(--tertiary);
-  border: 2px solid var(--tertiary);
   font-weight: 600;
-  margin-left: 4px;
+  border: 2px solid var(--tertiary);
   padding: 0px 8px;
   border-radius: 1em;
   line-height: normal;
+  margin-left: 4px;
 }
