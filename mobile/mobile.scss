@@ -21,4 +21,16 @@ body.archetype-private_message,
   border-radius: 1em;
   line-height: normal;
   margin-left: 4px;
+  body.category-adok-veszek-felujithato-tankok &,
+  body.category-adok-veszek-szettek &,
+  body.category-adok-veszek-kiegeszitok &,
+  body.category-adok-veszek-modok &,
+  body.category-adok-veszek-porlasztos-tankok &,
+  body.category-adok-veszek-aromak-es-kellekek &,
+  body.category-adok-veszek-csere-ecigire & {
+    content: "Hirdető";
+  }
+  body.category-kerdesek & {
+    content: "Kérdező";
+  }
 }
