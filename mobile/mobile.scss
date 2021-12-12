@@ -17,9 +17,9 @@ body.archetype-private_message,
   color: var(--tertiary);
   font-weight: 600;
   border: 2px solid var(--tertiary);
-  padding: 0px 8px;
+  padding: 0px 4px;
   border-radius: 1em;
-  line-height: normal;
+  line-height: var(--line-height-small);
   margin-left: 4px;
   body.category-adok-veszek-felujithato-tankok &,
   body.category-adok-veszek-szettek &,
