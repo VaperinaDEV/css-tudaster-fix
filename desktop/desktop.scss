@@ -5,7 +5,7 @@ body.archetype-private_message,
 #main-outlet .read_restricted { 
   .topic-body {
     .contents::after {
-      font-size: $font-down-2;
+      font-size: var(--font-down-2);
       margin-left: 11px;
     }
   }
